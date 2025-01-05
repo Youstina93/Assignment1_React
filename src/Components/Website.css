@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    color: white !important;
+}
+
+:root {
+    --main-color : rgb(26, 188, 156);
+}
+
+ /*-----------NavBar------------*/
+
+.navbar ,.footer {
+    background-color: rgb(33, 70, 103);
+}
+
+
+ a {
+    color: white !important;
+}
+
+.active {
+    background-color: var(--main-color) !important;
+    border-radius: 7px;
+}
+
+
+ /*-----------Home------------*/
+
+ .shape {
+    position: relative;
+}
+
+.shape::after {
+    position: absolute;
+    content: "";
+    width: 100px;
+    height: 4px;
+    background-color: white;
+    left: 45%;
+    top:35%;
+   transform: translate(-50%,-50%);
+}
+.shape::before {
+    position: absolute;
+    content: "";
+    width: 100px;
+    height: 4px;
+    background-color: white;
+    right: 38%;
+    top: 35%;
+   transform: translate(-50%,-50%);
+}
+
+.home {
+    background-color: var(--main-color) ;
+    padding: 80px 0;
+}
+.home .img {
+    width: 270px;
+}
+
+
+ .about {
+    background-color: var(--main-color) ;
+    padding: 210px 0;
+ }
+
+ /*-----------Portfolio------------*/
+ .portfolio {
+    padding: 110px 0;
+ }
+ .portfolio .container .row .col-md-4 .image {
+    width: 400px;
+    border-radius: 7px;
+ }
+
+ /* .portfolio .container .row .col-md-4 .image  { 
+    position: relative;
+ }
+
+ .portfolio .container .row .col-md-4 .image::before {
+    position: absolute;
+    content: "+";
+    font-size: 170px;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+    width: 100%;
+    height: 100%;
+    color: white;
+    transition: 0.5s;
+ }
+
+ .portfolio .container .row .col-md-4 .image:hover::before {
+    background-color: rgb(26 188 156 / 76%) !important;
+ } */
+ 
+.selected-image {
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+
+ /*-----------Contact------------*/
+ .contact {
+    padding: 100px 0;
+ }
+ .contact form {
+    width: 50%;
+    margin: 0 auto;
+ }
+ form .mb-5 {
+    position: relative;
+    margin: 20px 0;
+ }
+
+ form .mb-5  input {
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    outline: none;
+    padding: 5px 0;
+    font-size: 16px;
+    background: none;
+    transition: border-color 0.3s ease-in-out;
+ }
+
+form .mb-5 label {
+ position: absolute;
+  left: 0;
+  top: 10%;
+  transform: translateY(-50%);
+  font-size: 16px;
+  color:var(--main-color) ;
+  pointer-events: none;
+  transition: all 0.3s ease-in-out;
+}
+
+form label:hover form .mb-5 label
+{
+  top: -20px;
+  font-size: 12px;
+  color: #007bff !important;
+}
+
+form button {
+    background-color:var(--main-color) !important ;
+    border: none !important;
+}
+
+ /*-----------Footer------------*/
+ .footer {
+    padding: 80px;
+}
+
+.copyRight {
+    text-align: center;
+    padding: 10px;
+    font-size: 19px;
+    background-color:  rgb(32, 47, 59) ;
+}
